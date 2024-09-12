@@ -1,0 +1,43 @@
+public class Calculator{
+    
+    //declare var's
+    int sum;
+    int diff;
+    int prod;
+    double avg;
+    int dist;
+    int max;
+    int min;
+    
+    //calculate
+    public Calculator(int num1, int num2){
+        sum = num1 + num2;
+        diff = num1 - num2;
+        prod = num1 * num2;
+        avg = (num1 + num2)/2.0;
+        dist = Math.abs(diff);
+        max = (Math.abs(diff) + sum)/2;
+        min = (sum - Math.abs(diff))/2;
+    }
+    public int getSum(){
+        return sum;
+    }
+    public int getDiff(){
+        return diff;
+    }
+    public int getProd(){
+        return prod;
+    }
+    public double getAvg(){
+        return avg;
+    }
+    public int getDist(){
+        return dist;
+    }
+    public int getMax(){
+        return max;
+    }
+    public int getMin(){
+        return min;
+    }
+    }
